@@ -2,21 +2,21 @@
 public class JuomaAutomaatti {
 	
 	public JuomaAutomaatti() {
-		this.teet‰ = 50;
+		this.teet√§ = 50;
 		this.kahvia = 50;
 		this.kaakaota = 50;
 	}
 
-	private int teet‰;
+	private int teet√§;
 	private int kahvia;
 	private int kaakaota;
 
-	public int getTeet‰() {
-		return teet‰;
+	public int getTeet√§() {
+		return teet√§;
 	}
 
-	public void setTeet‰(int teet‰) {
-		this.teet‰ = teet‰;
+	public void setTeet√§(int teet√§) {
+		this.teet√§ = teet√§;
 	}
 
 	public int getKahvia() {
@@ -39,27 +39,27 @@ public class JuomaAutomaatti {
 		
 		System.out.print("Odota hetki, kahvisi valmistuu...");
 		
-		if (this.kahvia -10 < 0) {
+		if (this.kahvia -10 < 0) { // Hyv√§ ett√§ tsekkaat ett√§ raaka-ainetta on tarpeeksi suoritettavaan operaatioon
 		this.kahvia = 0;
-		System.out.print(" Kahvi on loppu! T‰yt‰ s‰iliˆ.");
+		System.out.print(" Kahvi on loppu! T√§yt√§ s√§ili√∂.");
 	}
 		
 		else this.kahvia -= 10;
 		
-		System.out.println(" Kahvia j‰ljell‰: " + this.kahvia + " yksikkˆ‰");
+		System.out.println(" Kahvia j√§ljell√§: " + this.kahvia + " yksikk√∂√§");
 	}
 
 	public void valmistaTee() {
 		
 		System.out.print("Odota hetki, teesi valmistuu...");
 		
-		if (this.teet‰ -10 < 0) {
-		this.teet‰ = 0;
-		System.out.print(" Tee on loppu! T‰yt‰ s‰iliˆ.");
+		if (this.teet√§ -10 < 0) {
+		this.teet√§ = 0;
+		System.out.print(" Tee on loppu! T√§yt√§ s√§ili√∂.");
 	}
-		else this.teet‰ -= 10;
+		else this.teet√§ -= 10;
 		
-		System.out.println(" Teet‰ j‰ljell‰: " + this.teet‰ + " yksikkˆ‰");
+		System.out.println(" Teet√§ j√§ljell√§: " + this.teet√§ + " yksikk√∂√§");
 	}
 
 	public void valmistaKaakao() {
@@ -68,16 +68,16 @@ public class JuomaAutomaatti {
 		
 		if (this.kaakaota -10 < 0) {
 		this.kaakaota = 0;
-		System.out.print(" Kaakao on loppu! T‰yt‰ s‰iliˆ.");
+		System.out.print(" Kaakao on loppu! T√§yt√§ s√§ili√∂.");
 	}
 		
 		else this.kaakaota -= 10;
 		
-		System.out.println(" Kaakaota j‰ljell‰: " + this.kaakaota + " yksikkˆ‰");
+		System.out.println(" Kaakaota j√§ljell√§: " + this.kaakaota + " yksikk√∂√§");
 	}
 		
 		public String toString() {
-			return "Kahvia j‰ljell‰: " + this.getKahvia() + " Teet‰ j‰ljell‰: " + this.getTeet‰() + " Kaakaota j‰ljell‰: " + this.getKaakaota();
+			return "Kahvia j√§ljell√§: " + this.getKahvia() + " Teet√§ j√§ljell√§: " + this.getTeet√§() + " Kaakaota j√§ljell√§: " + this.getKaakaota();
 
 	}
 }
